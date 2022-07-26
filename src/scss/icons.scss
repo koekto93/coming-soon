@@ -1,0 +1,18 @@
+%local-white-logo-icon {
+  @include svg-icon(96px, 40px, 'local-logo', #fff);
+}
+%local-black-logo-icon {
+  @include svg-icon(65px, 27px, 'local-logo', #000);
+}
+%mobile-me-logo-icon {
+  @include svg-icon(39px, 30px, 'me-logo', #FAE453);
+}
+%desktop-me-logo-icon {
+  @include svg-icon(54px, 40px, 'me-logo', #FAE453);
+}
+%vegitables-icon {
+  @include svg-icon(519px, 308px, 'vegitables', #fff);
+}
+
+
+/* https://blog.teamtreehouse.com/extending-placeholder-selectors-with-sass */

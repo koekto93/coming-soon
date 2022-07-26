@@ -1,0 +1,14 @@
+.l-counter-block {
+    position: relative;
+
+    &__shadow-block {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.25);
+        filter: blur(25px);
+        z-index: -1;
+        //backdrop-filter: blur(25px);
+        //-webkit-backdrop-filter: blur(25px);
+    }
+}

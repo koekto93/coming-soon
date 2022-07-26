@@ -1,0 +1,15 @@
+@import 'reset';
+@import 'fonts';
+@import 'common';
+@import 'icons';
+
+// new 
+@import './layers/main-layer';
+
+//new block
+@import './blocks/text-block.scss';
+@import './blocks/notification-block.scss';
+@import './blocks/counter-block.scss';
+
+//new elem
+@import './elements/counter.scss';

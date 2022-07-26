@@ -1,0 +1,139 @@
+.l-main-layer {
+  height: 100%;
+  position: relative;
+
+  &__counter-block {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../uploads/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__notification-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__main-content {
+    display: flex;
+    height: 100%;
+  }
+
+  &__text-block {
+    flex-basis: 30%;
+  }
+
+  &__desktop-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 28px 39px;
+    background-color: #042B38;
+    display: flex;
+  }
+
+  &__mobile-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 28px 39px;
+    display: flex;
+    display: none;
+  }
+
+
+  &__logo-img {
+    background-image: url('../../img/localme_logo.svg');
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 40px;
+  }
+
+  @media(max-width: 499px) {
+    &__main-content {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+    }
+
+    &__desktop-logo {
+      padding: 16px 30px;
+      right: 0;
+      & > div:first-child {
+        width: 52px;
+        height: 22px;
+      }
+      & > div:last-child {
+        width: 32px;
+        height: 24px;
+      }
+    }
+
+    &__counter-block {
+      height: 303px;
+      padding-bottom: 23px;
+      flex-grow: 0;
+      align-items: flex-end;
+    }
+
+    &__notification-block {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+  }
+
+  @media(min-width: 500px) and (max-width: 980px) {
+    &__main-content {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+    }
+    &__desktop-logo {
+      padding: 16px 30px;
+      & > div:first-child {
+        width: 52px;
+        height: 22px;
+      }
+      & > div:last-child {
+        width: 32px;
+        height: 24px;
+      }
+    }
+
+    &__counter-block {
+      height: 303px;
+      padding-bottom: 23px;
+      flex-grow: 0;
+      align-items: flex-end;
+    }
+
+    &__notification-block {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+  }
+
+
+  @media(min-width: 981px) and (max-width: 1700px)  {
+    &__desktop-logo {
+      padding: 16px 30px;
+      & > div:first-child {
+        width: 70px;
+        height: 31px;
+      }
+      & > div:last-child {
+        width: 41px;
+        height: 32px;
+      }
+    }
+  }
+
+}

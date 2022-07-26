@@ -1,0 +1,104 @@
+.l-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    &__content {
+        margin-top: 150px;
+    }
+    &__header {
+        margin-bottom: 32px;
+        @include font-regular(60px, 72px, start, #062B38, 0.03em);
+    }
+    &__text {
+        @include font-regular(30px, 38px, start, #062B38, 0.02em);
+    }
+
+    @media(max-width: 480px) {
+        padding: 30px 20px;
+        align-items: center;
+    
+        &__content {
+            margin-top: 0;
+        }
+
+        &__header {
+            font-size: 40px;
+            line-height: 46px;
+            text-align: start;
+
+        }
+
+        &__text {
+            font-size: 20px;
+            line-height: 24px;
+            text-align: start;
+        }
+      }
+    @media (min-width: 481px) and (max-width: 980px) {
+        padding: 30px 20px;
+        align-items: center;
+    
+        &__content {
+            margin-top: 0;
+            align-items: center;
+        }
+
+        &__header {
+            font-size: 40px;
+            line-height: 46px;
+            text-align: center;
+
+        }
+
+        &__text {
+            font-size: 20px;
+            line-height: 24px;
+            display: inline-block;
+            width: 60%;
+            text-align: center;
+        }
+      }
+
+
+      @media(min-width: 981px) and (max-width: 1139px)  {
+        padding: 30px 20px;
+
+    &__header {
+           font-size: 50px;
+           line-height: 62px;
+        }
+        &__text {
+            font-size: 24px;
+            line-height: 34px
+        } 
+      }
+
+      @media(min-width: 1140px) and (max-width: 1350px)  {
+        //padding: 30px 40px;
+
+      /*   &__header {
+           font-size: 40px;
+           line-height: 54px;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 28px
+        } */
+      }
+
+      @media(min-width: 1351px) and (max-width: 1700px)  {
+        //padding: 30px 40px;
+/* 
+        &__header {
+           font-size: 50px;
+           line-height: 64px;
+        }
+        &__text {
+            font-size: 24px;
+            line-height: 32px
+        } */
+      }
+}
+  

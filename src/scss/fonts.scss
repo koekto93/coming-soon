@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Arial-Narrow;
+  src: url(../fonts/Arial-Narrow.ttf);
+}
+
+@font-face {
+  font-family: Arial-NarrowBold;
+  src: url(../fonts/Arial-Narrow-Bold.ttf);
+}
+
+@font-face {
+  font-family: Arial-Narrow-Italic;
+  src: url(../fonts/Arial-Narrow-Italic.ttf);
+}
+
+@font-face {
+  font-family: Arial-Narrow-BoldItalic;
+  src: url(../fonts/Arial-Narrow-Bold-Italic.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@mixin font-regular(
+  $size: 12px,
+  $lineHeight: normal,
+  $textAlign: start,
+  $color: #1b1e2d,
+  $letterSpacing: normal
+) {
+  font-family: Arial-Narrow;
+  font-size: $size;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  color: $color;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin font-intro(
+  $size: 15px,
+  $lineHeight: normal,
+  $textAlign: start,
+  $color: #1a1a1a,
+  $letterSpacing: normal
+) {
+  font-family: Arial-Narrow-BoldItalic;
+  font-size: $size;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  color: $color;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin font-bold(
+  $size: 14px,
+  $lineHeight: normal,
+  $textAlign: start,
+  $color: #bfbfbf,
+  $letterSpacing: normal
+) {
+  font-family: Montserrat-Bold;
+  font-size: $size;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  color: $color;
+}
+
+@mixin font-italic(
+  $size: 13px,
+  $lineHeight: normal,
+  $textAlign: start,
+  $color: #1a1a1a
+) {
+  font-family: Arial-Narrow-Italic;
+  font-size: $size;
+  line-height: $lineHeight;
+  text-align: $textAlign;
+  color: $color;
+}

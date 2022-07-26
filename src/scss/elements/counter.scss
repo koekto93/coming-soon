@@ -1,0 +1,84 @@
+.c-counter {
+  &__countdown-title {
+    z-index: 1;
+    margin-bottom: 16px;
+    @include font-regular(24px, 34px, start, #ffffff, 0.02em);
+  }
+
+  @media(max-width: 499px) {
+    &__countdown-title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+  }
+
+  @media(min-width: 500px) and (max-width: 980px)  {
+    &__countdown-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+  }
+}
+
+.c-countdown {
+    grid-gap: 40px; // mobile 16
+
+  &__number {
+    border-radius: 24px;
+    border: 2px solid #fff;
+    border-color: #ffffff;
+    background: linear-gradient(170.36deg, rgba(255, 255, 255, 0.4) 3.93%, rgba(255, 255, 255, 0.1) 80.08%);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+  }
+
+  &__time {
+    padding: 15px;
+    display: inline-block;
+    min-width: 126px;
+    @include font-bold(64px, 78px, center, #ffffff, 0.06em);
+  }
+
+  &__text {
+    z-index: 1;
+    @include font-regular(24px, 34px, start, #ffffff, 0.02em);
+  }
+
+  @media(max-width: 499px) {
+    grid-gap: 16px;
+
+    &__time {
+        font-size: 20px;
+        line-height: 24px;
+        min-width: 64px;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+  }
+
+  @media(min-width: 500px) and (max-width: 980px)  {
+    grid-gap: 16px;
+
+    &__time {
+        font-size: 36px;
+        line-height: 38px;
+        min-width: 84px;
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+  }
+
+  @media(min-width: 981px) and (max-width: 1024px)  {
+    grid-gap: 30px;
+
+    &__time {
+        font-size: 56px;
+        min-width: 110px;
+    }
+  }
+}
